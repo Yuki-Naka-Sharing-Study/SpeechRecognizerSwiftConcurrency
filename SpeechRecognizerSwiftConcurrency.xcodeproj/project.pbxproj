@@ -11,6 +11,9 @@
 		D11774BC2E0F7A3D00D082F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11774BB2E0F7A3D00D082F9 /* ContentView.swift */; };
 		D11774BE2E0F7A3F00D082F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11774BD2E0F7A3F00D082F9 /* Assets.xcassets */; };
 		D11774C12E0F7A3F00D082F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11774C02E0F7A3F00D082F9 /* Preview Assets.xcassets */; };
+		D11774CC2E0F7CFA00D082F9 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11774CB2E0F7CFA00D082F9 /* AudioRecorder.swift */; };
+		D11774CE2E0F7D0D00D082F9 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11774CD2E0F7D0D00D082F9 /* SpeechRecognizer.swift */; };
+		D11774D02E0F7D2A00D082F9 /* TranscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11774CF2E0F7D2A00D082F9 /* TranscriberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		D11774BB2E0F7A3D00D082F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D11774BD2E0F7A3F00D082F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11774C02E0F7A3F00D082F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D11774CB2E0F7CFA00D082F9 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		D11774CD2E0F7D0D00D082F9 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		D11774CF2E0F7D2A00D082F9 /* TranscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				D11774BB2E0F7A3D00D082F9 /* ContentView.swift */,
 				D11774BD2E0F7A3F00D082F9 /* Assets.xcassets */,
 				D11774BF2E0F7A3F00D082F9 /* Preview Content */,
+				D11774CB2E0F7CFA00D082F9 /* AudioRecorder.swift */,
+				D11774CD2E0F7D0D00D082F9 /* SpeechRecognizer.swift */,
+				D11774CF2E0F7D2A00D082F9 /* TranscriberView.swift */,
 			);
 			path = SpeechRecognizerSwiftConcurrency;
 			sourceTree = "<group>";
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11774D02E0F7D2A00D082F9 /* TranscriberView.swift in Sources */,
+				D11774CC2E0F7CFA00D082F9 /* AudioRecorder.swift in Sources */,
+				D11774CE2E0F7D0D00D082F9 /* SpeechRecognizer.swift in Sources */,
 				D11774BC2E0F7A3D00D082F9 /* ContentView.swift in Sources */,
 				D11774BA2E0F7A3D00D082F9 /* SpeechRecognizerSwiftConcurrencyApp.swift in Sources */,
 			);
@@ -197,6 +209,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のためマイクを使用します";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声をテキストに変換するために使用します";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -254,6 +268,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のためマイクを使用します";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声をテキストに変換するために使用します";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -275,6 +291,8 @@
 				DEVELOPMENT_TEAM = 6J48TJY98C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のためマイクを使用します";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声をテキストに変換するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +322,8 @@
 				DEVELOPMENT_TEAM = 6J48TJY98C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のためマイクを使用します";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声をテキストに変換するために使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
